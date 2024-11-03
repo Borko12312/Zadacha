@@ -1,0 +1,25 @@
+broi_grupi = int(input())
+Musala = 0
+Monblan = 0
+Kilimanjaro = 0
+K2 = 0
+Everest = 0
+
+for _ in range(broi_grupi):
+    broi_hora_v_grupa = int(input())
+    obshto = Musala + Monblan + Kilimanjaro + K2 + Everest
+    if broi_hora_v_grupa >= 5:
+        Musala += broi_hora_v_grupa
+        print(f"{Musala / obshto * 100:.2f}%")
+    elif 6 <= broi_hora_v_grupa <= 12:
+        Monblan += broi_hora_v_grupa
+        print(f"{Monblan / obshto * 100:.2f}%")
+    elif 13 <= broi_hora_v_grupa <= 25:
+        Kilimanjaro += broi_hora_v_grupa
+        print(f"{Kilimanjaro / obshto * 100:.2f}%")
+    elif 26 <= broi_hora_v_grupa <= 40:
+        K2 += broi_hora_v_grupa
+        print(f"{K2 / obshto * 100:.2f}%")
+    elif broi_hora_v_grupa >= 41:
+        Everest += broi_hora_v_grupa
+        print(f"{Everest / obshto * 100:.2f}%")
